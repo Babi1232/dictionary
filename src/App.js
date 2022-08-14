@@ -13,7 +13,12 @@ function App() {
         </main>
         <footer className="App-footer">
           {" "}
-          <small>Coded by Babisha Shrestha</small>
+          <small>
+            Coded by Babisha Shrestha and is open-sourced on{" "}
+            <a href="https://github.com/Babi1232/dictionary"> Github</a> and
+            hosted on{" "}
+            <a href="https://clinquant-yeot-ac36a7.netlify.app/">Netlify</a>
+          </small>
         </footer>
       </div>
     </div>
