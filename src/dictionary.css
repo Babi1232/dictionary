@@ -5,12 +5,13 @@
 }
 
 .dictionary section {
-  background: white;
+  background: #fff;
   padding: 30px;
   border-radius: 6px;
-  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
   margin: 20px 0;
 }
+
 .dictionary input {
   width: 100%;
   border-radius: 6px;

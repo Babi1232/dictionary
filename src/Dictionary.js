@@ -20,9 +20,9 @@ export default function Dictionary(props) {
     axios.get(apiUrl).then(handleResponse);
     let pexelApiKey =
       "563492ad6f917000010000017a4d8b9a14d84b7587f28a0598d4a9ea";
-    let pexelUrl = `https://api.pexels.com/v1/search?query=${keyword}`;
-    let headers = { Authorization: `Bearer${pexelApiKey}` };
-    axios.get(pexelUrl, { headers: headers }).then(handlePexelResponse);
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
+    let headers = { Authorization: `Bearer ${pexelApiKey}` };
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelResponse);
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -51,6 +51,7 @@ export default function Dictionary(props) {
             suggested words: sunset,sunrise,wine,flower.....
           </div>
         </section>
+
         <Results results={results} />
         <Photos photos={photos} />
       </div>
